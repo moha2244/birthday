@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PartyTime - Birthday Celebrations</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Baloo+2:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Floating Balloons -->
+    <div class="balloon balloon1"></div>
+    <div class="balloon balloon2"></div>
+    <div class="balloon balloon3"></div>
+    <div class="balloon balloon4"></div>
+
+    <!-- Header with Navigation -->
+    <header class="animate__animated animate__fadeInDown">
+      <div class="container">
+        <div class="logo">
+          <i class="fas fa-birthday-cake"></i>
+          <h1>Party<span>Time</span></h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#packages" class="nav-link">Packages</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+            <li><a href="#booking" class="nav-link cta-button">Book Now</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content animate__animated animate__fadeInLeft">
+          <h2>Make Your Birthday <span>Unforgettable</span></h2>
+          <p>We create magical birthday experiences tailored just for you!</p>
+          <a
+            href="#booking"
+            class="btn btn-primary animate__animated animate__pulse animate__infinite"
+            >Plan Your Party</a
+          >
+        </div>
+        <div class="hero-image animate__animated animate__fadeInRight">
+          <img
+            src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            alt="Birthday Celebration"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+      <div class="container">
+        <h2 class="section-title animate__animated animate__fadeIn">
+          Our <span>Party Packages</span>
+        </h2>
+        <div class="packages-grid">
+          <div
+            class="package-card animate__animated animate__fadeInUp"
+            data-delay="0"
+          >
+            <div class="package-header">
+              <h3>Basic Bash</h3>
+              <div class="price">$299</div>
+            </div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Venue decoration</li>
+              <li><i class="fas fa-check"></i> Birthday cake (20 servings)</li>
+              <li><i class="fas fa-check"></i> Party favors for all guests</li>
+              <li><i class="fas fa-check"></i> 3 hours celebration</li>
+              <li><i class="fas fa-check"></i> Basic sound system</li>
+            </ul>
+            <button class="btn btn-outline select-package" data-package="basic">
+              Select Package
+            </button>
+          </div>
+
+          <div
+            class="package-card featured animate__animated animate__fadeInUp"
+            data-delay="200"
+          >
+            <div class="popular-badge">Most Popular!</div>
+            <div class="package-header">
+              <h3>Premium Party</h3>
+              <div class="price">$599</div>
+            </div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Everything in Basic</li>
+              <li><i class="fas fa-check"></i> Professional photographer</li>
+              <li><i class="fas fa-check"></i> Entertainer (magician/clown)</li>
+              <li><i class="fas fa-check"></i> Custom theme decoration</li>
+              <li><i class="fas fa-check"></i> 4 hours celebration</li>
+            </ul>
+            <button
+              class="btn btn-primary select-package"
+              data-package="premium"
+            >
+              Select Package
+            </button>
+          </div>
+
+          <div
+            class="package-card animate__animated animate__fadeInUp"
+            data-delay="400"
+          >
+            <div class="package-header">
+              <h3>Deluxe Celebration</h3>
+              <div class="price">$999</div>
+            </div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Everything in Premium</li>
+              <li><i class="fas fa-check"></i> VIP venue setup</li>
+              <li><i class="fas fa-check"></i> Catering for all guests</li>
+              <li><i class="fas fa-check"></i> DJ or live music</li>
+              <li><i class="fas fa-check"></i> 5 hours celebration</li>
+            </ul>
+            <button
+              class="btn btn-outline select-package"
+              data-package="deluxe"
+            >
+              Select Package
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Party <span>Gallery</span></h2>
+        <div class="gallery-grid">
+          <div
+            class="gallery-item"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1549589237-9e70b6be4da8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            "
+          >
+            <div class="overlay">
+              <h3>Princess Theme</h3>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1526&q=80');
+            "
+          >
+            <div class="overlay">
+              <h3>Superhero Party</h3>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');
+            "
+          >
+            <div class="overlay">
+              <h3>Outdoor Celebration</h3>
+            </div>
+          </div>
+          <div
+            class="gallery-item"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');
+            "
+          >
+            <div class="overlay">
+              <h3>Elegant Adult Party</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Happy <span>Customers</span></h2>
+        <div class="testimonials-slider">
+          <div class="testimonial-card active">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "PartyTime made my daughter's 5th birthday absolutely magical! The
+              princess theme was executed perfectly and all the kids had a
+              blast."
+            </p>
+            <div class="customer">
+              <img
+                src="https://randomuser.me/api/portraits/women/43.jpg"
+                alt="Sarah J."
+              />
+              <div>
+                <h4>Sarah J.</h4>
+                <span>Mother of birthday girl</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>
+              "I was amazed by how they transformed our backyard into a
+              superhero wonderland for my son's party. Worth every penny!"
+            </p>
+            <div class="customer">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="Michael T."
+              />
+              <div>
+                <h4>Michael T.</h4>
+                <span>Father of birthday boy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>
+              "My 30th birthday party organized by PartyTime was the talk of our
+              friend group for weeks! Professional and fun service."
+            </p>
+            <div class="customer">
+              <img
+                src="https://randomuser.me/api/portraits/women/65.jpg"
+                alt="Jessica L."
+              />
+              <div>
+                <h4>Jessica L.</h4>
+                <span>Birthday celebrant</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-controls">
+            <button class="slider-prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <button class="slider-next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+      <div class="container">
+        <h2 class="section-title">Book Your <span>Party</span></h2>
+        <div class="booking-container">
+          <div class="booking-image animate__animated animate__fadeInLeft">
+            <img
+              src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Party Planning"
+            />
+          </div>
+          <div class="booking-form animate__animated animate__fadeInRight">
+            <form id="partyBookingForm">
+              <div class="form-group">
+                <label for="bookingName">Your Name</label>
+                <input type="text" id="bookingName" name="name" required />
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingEmail">Email</label>
+                <input type="email" id="bookingEmail" name="email" required />
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingPhone">Phone Number</label>
+                <input type="tel" id="bookingPhone" name="phone" required />
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingDate">Party Date</label>
+                <input type="date" id="bookingDate" name="date" required />
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingGuests">Number of Guests</label>
+                <input
+                  type="number"
+                  id="bookingGuests"
+                  name="guests"
+                  min="1"
+                  required
+                />
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingPackage">Package</label>
+                <select id="bookingPackage" name="package" required>
+                  <option value="">Select a package</option>
+                  <option value="basic">Basic Bash ($299)</option>
+                  <option value="premium">Premium Party ($599)</option>
+                  <option value="deluxe">Deluxe Celebration ($999)</option>
+                  <option value="custom">Custom Package</option>
+                </select>
+                <span class="error-message"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="bookingTheme">Party Theme (optional)</label>
+                <input
+                  type="text"
+                  id="bookingTheme"
+                  name="theme"
+                  placeholder="e.g., Unicorn, Space, etc."
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="bookingRequests">Special Requests</label>
+                <textarea
+                  id="bookingRequests"
+                  name="requests"
+                  rows="4"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <span class="submit-text">Submit Booking</span>
+                <span class="loading-spinner"
+                  ><i class="fas fa-spinner fa-spin"></i
+                ></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmation Modal -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h3>Booking Confirmation</h3>
+          <button class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="confirmation-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h4>Thank you for your booking!</h4>
+          <p>
+            We've received your party request and will contact you within 24
+            hours to confirm all the details.
+          </p>
+          <div class="booking-summary">
+            <!-- Dynamically filled by JavaScript -->
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary close-modal">Great, thanks!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <div class="logo">
+              <i class="fas fa-birthday-cake"></i>
+              <h3>Party<span>Time</span></h3>
+            </div>
+            <p>
+              Creating unforgettable birthday experiences since 2015. Let us
+              make your special day truly magical!
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest-p"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#packages">Packages</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#booking">Book Now</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 Party Street,
+                Celebration City
+              </li>
+              <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+              <li><i class="fas fa-envelope"></i> hello@partytime.com</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2023 PartyTime. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
